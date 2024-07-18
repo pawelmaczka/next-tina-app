@@ -7,6 +7,8 @@ const branch =
   process.env.HEAD ||
   "main";
 
+console.log('process.env.NEXT_PUBLIC_TINA_CLIENT_ID:', process.env.NEXT_PUBLIC_TINA_CLIENT_ID)
+
 export default defineConfig({
   branch,
 
