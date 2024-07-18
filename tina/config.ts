@@ -7,6 +7,8 @@ const branch =
   process.env.HEAD ||
   "main";
 
+const basePath = process.env.NODE_ENV === 'development' ? '' : '/next-tina-app';
+
 export default defineConfig({
   branch,
 
@@ -18,6 +20,7 @@ export default defineConfig({
   build: {
     outputFolder: "admin",
     publicFolder: "public",
+    basePath,
   },
   media: {
     tina: {
