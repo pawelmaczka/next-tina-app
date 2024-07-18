@@ -7,7 +7,7 @@ const branch =
   process.env.HEAD ||
   "main";
 
-const basePath = process.env.NODE_ENV === 'development' ? '' : '/next-tina-app';
+const basePath = process.env.NODE_ENV === 'development' ? '' : 'next-tina-app';
 
 export default defineConfig({
   branch,
