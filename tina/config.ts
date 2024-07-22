@@ -1,5 +1,7 @@
 import { defineConfig } from "tinacms";
 
+import config from "../config"
+
 // Your hosting provider likely exposes this as an environment variable
 const branch =
   process.env.GITHUB_BRANCH ||
@@ -18,6 +20,7 @@ export default defineConfig({
   build: {
     outputFolder: "admin",
     publicFolder: "public",
+    basePath: config.basePath,
   },
   media: {
     tina: {

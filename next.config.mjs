@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 
-const isProd = process.env.NODE_ENV === 'production';
+import config from './config'
 
 const nextConfig = {
-  basePath: isProd ? '/next-tina-app' : '',
+  basePath: config.basePath,
   output: 'export',
   distDir: 'dist',
 };
