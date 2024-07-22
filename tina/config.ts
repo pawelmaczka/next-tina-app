@@ -1,6 +1,6 @@
 import { defineConfig } from "tinacms";
 
-import config from "../config";
+const isProd = process.env.NODE_ENV === "production";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
@@ -20,7 +20,7 @@ export default defineConfig({
   build: {
     outputFolder: "admin",
     publicFolder: "public",
-    basePath: config.basePath,
+    basePath: isProd ? '/tina-cms-nextjs-demo' : '',
   },
   media: {
     tina: {
