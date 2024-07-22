@@ -4,6 +4,8 @@ const isProd = process.env.NODE_ENV === "production";
 
 import config from '../next.config.mjs'
 
+console.log('TINA BASE PATH', config.basePath)
+
 // Your hosting provider likely exposes this as an environment variable
 const branch =
   process.env.GITHUB_BRANCH ||
