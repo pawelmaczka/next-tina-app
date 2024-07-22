@@ -20,7 +20,7 @@ export default defineConfig({
   build: {
     outputFolder: "admin",
     publicFolder: "public",
-    basePath: 'tina-cms-nextjs-demo',
+    basePath: 'next-tina-app',
   },
   media: {
     tina: {
