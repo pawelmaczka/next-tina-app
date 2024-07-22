@@ -4,6 +4,8 @@ const basePath = process.env.NODE_ENV === 'development' ? '' : '/next-tina-app';
 
 const nextConfig = {
   // basePath,
+  output: 'export',
+  distDir: 'dist',
 };
 
 export default nextConfig;
