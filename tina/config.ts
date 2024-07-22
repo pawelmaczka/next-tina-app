@@ -1,6 +1,6 @@
 import { defineConfig } from "tinacms";
 
-import config from "../config"
+import config from "../config";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
