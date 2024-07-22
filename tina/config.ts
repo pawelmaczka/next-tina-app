@@ -24,7 +24,7 @@ export default defineConfig({
   build: {
     outputFolder: "admin",
     publicFolder: "public",
-    basePath: config.basePath,
+    basePath: 'next-tina-app',
   },
   media: {
     tina: {
